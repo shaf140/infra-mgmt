@@ -1,6 +1,6 @@
 # Cloud Infrastructure Management Solution in Golang
 
-This project provides a Golang-based solution to manage cloud infrastructure operations, focusing on AWS EKS and other cloud resources. The solution adheres to best practices in coding, testing, and scalability, and includes error handling and logging.
+This project provides a Golang-based solution to manage cloud infrastructure operations, focusing on AWS EKS as the intended cloud platform. The solution adheres to best practices in coding, testing, and scalability, and includes error handling and logging.
 
 ## Features
 
@@ -62,7 +62,7 @@ POST /api/v1/vm/create
 POST /api/v1/k8s/create
 {
   "name": "cluster-1",
-  "version": "1.22",
+  "version": "1.32",
   "flavor": "eks"
 }
 ```
@@ -142,11 +142,3 @@ POST /api/v1/vm/migrate
       "code": 404
   }
   ```
-
-## Future Enhancements
-- Add support for additional cloud providers.
-- Enhance observability with metrics and distributed tracing.
-
----
-This project serves as a robust and scalable solution for managing cloud infrastructure operations. It ensures reliability, performance, and ease of use for DevOps and infrastructure teams.
-
